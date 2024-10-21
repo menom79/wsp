@@ -1,0 +1,9 @@
+MongoAtlas: 
+username: academicgolam
+Password: di3j3mqyYzgDSvoH
+
+connectionString: mongodb+srv://academicgolam:di3j3mqyYzgDSvoH@menomvaitask.rl8in.mongodb.net/
+
+Database User Username: Cluster56756
+Database User Password: V35qTXV1blh7
+mongodb+srv://cluster56756.rnlex.mongodb.net
