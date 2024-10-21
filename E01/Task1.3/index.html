@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Info</title>
+</head>
+<body>
+    <h1>System Information</h1>
+    <pre id="system-info">Loading...</pre>
+
+    <script>
+        window.onload = function() {
+            fetch('/data')
+                .then(response => response.json())
+                .then(data => {
+                    const systemInfo = document.getElementById('system-info');
+                    systemInfo.textContent = JSON.stringify(data, null, 2);
+                })
+                .catch(error => {
+                    console.error('Error fetching system data:', error);
+                });
+        };
+    </script>
+</body>
+</html>
